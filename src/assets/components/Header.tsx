@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <div className="py-6 flex justify-center
-      w-full m-0">
+      w-full m-0 sticky top-0 overflow-auto self-start z-20 bg-main-extra-dark-blue shadow-md">
 
           <ul className="ulNav">
             <li className="liNav">
