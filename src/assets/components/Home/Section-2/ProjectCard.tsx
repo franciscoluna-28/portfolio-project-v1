@@ -1,4 +1,7 @@
 import { Card } from "../../../interfaces/CardInterface";
+import "../../../style-utils/utils.css";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
 
 const ProjectCard = ({
   projectImageURL,
@@ -6,27 +9,38 @@ const ProjectCard = ({
   projectDescription,
 }: Card) => {
   return (
-    <>
-      <div className="h-auto bg-gradient-to-r from-main-dark-blue to-main-extra-dark-blue flex rounded-md overflow-hidden my-8 shadow-lg hover:scale-105 duration-300 justify-center">
-        <div className="w-1/2 h-auto py-8 px-8">
-          <h2 className="text-silver font-bold text-xl flex justify-start">
-            {projectName}
-          </h2>
-          <p className="pt-2 text-silver leading-relaxed text-justify">
-            {projectDescription}
-          </p>
-          <button className="bg-transparent hover:bg-main-cyan flex justify-items-start justify-center items-center duration-300 ease-in h-14 text-silver font-regular hover:text-main-extra-dark-blue mt-4 w-1/2 border border-main-cyan hover:border-transparent rounded  max-1023:h-16">
-            Learn More
-          </button>
+    <div>
+      <div className="h-auto project-card w-80 rounded-md hover:scale-105 duration-500 shadow-md">
+        <div className="flex justify-center">
+          <img
+            className="h-56 w-auto border-5 border-solid border-white shadow-md rounded-t-md relative"
+            src={projectImageURL}
+          ></img>
         </div>
 
-        <div
-          className="w-full h-auto bg-cover bg-no-repeat bg-center max-w-md"
-          style={{ backgroundImage: `url(${projectImageURL})` }}
-        ></div>
+        <div className="flex px-8 py-6 flex-col">
+          <h3 className="text-white font-bold text-lg text-left">
+            {projectName}
+          </h3>
+          <p className="text leading-loose text-silver pt-2 text-left">
+            {projectDescription}
+          </p>
+
+          <div className="flex gap-6 py-6">
+            <GitHubIcon className="text-white translate-y-3 glow-text" />
+            <LanguageIcon className="text-main-cyan translate-y-3 glow-text" />
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
+
+{
+  /* <div
+className="w-full h-auto bg-cover bg-no-repeat bg-center max-w-md max-1023:hidden"
+style={{ backgroundImage: `url(${projectImageURL})` }}
+></div> */
+}
 
 export default ProjectCard;
