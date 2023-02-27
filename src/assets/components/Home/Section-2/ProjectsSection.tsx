@@ -1,21 +1,24 @@
 import ProjectCard from "./ProjectCard";
+import "../../../style-utils/utils.css";
+import weatherImage from "../../../../images/projects-images/weatherApp.png";
+import blogImage from "../../../../images/projects-images/blog.png";
+import waterImage from "../../../../images/projects-images/water-intake-calculator.png";
 
 const ProjectsSection = () => {
   return (
-    <div className="w-full h-full bg-main-dark-blue m-auto min">
+    <div className="w-full h-full bg-main-extra-dark-blue m-auto min">
       <div>
         {" "}
         {/* box 2 container */}
-        <p
-          className="pt-8 font-bold text-silver uppercase text-2xl liNav link link-underline link-underline-black
-max-w-fit w-full flex justify-center m-auto"
-        >
-          last projects
-        </p>
-        <div className="w-full px-12 grid-flow-row col-auto grid justify-center pt-2">
+        <div className="glow-text">
+          <h2 className="pt-8 font-extrabold text-white uppercase text-4xl tracking-wider main-title main-title-glow">
+            last projects
+          </h2>
+        </div>
+        <div className="w-full px-12 grid-flow-col gap-16 col-auto grid justify-center pt-20 max-1279:grid-flow-row max-1279:row-auto">
           {/* projects container */}
           <ProjectCard
-            projectImageURL="../../../../../public/images/weatherApp.png"
+            projectImageURL={weatherImage}
             projectName="Weather App"
             projectDescription="Project made for learning
           purposes with React, Vite,
@@ -23,14 +26,18 @@ max-w-fit w-full flex justify-center m-auto"
           ES6 and fetch API."
           />
           <ProjectCard
-            projectImageURL="../../../../../public/images/blog.png"
+            projectImageURL={blogImage}
             projectName="Personal Blog"
             projectDescription="Project made as a hobbie 
             using TypeScript, SASS,
             JavaScript, Gulp and
-            ES6."
+            ES6. Learned a lot making this one."
           />
-          <ProjectCard projectImageURL="../../../../../public/images/water-intake-calculator.png" projectName="Water Intake Calculator" projectDescription="Project made experimenting with Vite and ReactJS. This was my first time experimenting with hooks."/>
+          <ProjectCard
+            projectImageURL={waterImage}
+            projectName="Water Intake Calculator"
+            projectDescription="Project made experimenting with Vite and ReactJS. This was my first time experimenting with hooks and other React features."
+          />
         </div>
       </div>
     </div>
