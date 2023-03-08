@@ -1,49 +1,39 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SkillsToLearn from "./SkillsToLearn";
-import SkillsLearned from "./SkillsLearned";
+import LearnedSkills from "./SkillsLearned";
 
 const SkillsSection = () => {
   return (
-    <div className="w-full h-full bg-main-dark-extra-blue m-auto min py-16">
-      <h2
-        className="pt-8 font-bold text-silver uppercase text-2xl liNav link link-underline link-underline-black
-max-w-fit w-full flex justify-center m-auto"
-      >
-        Skills
-      </h2>{" "}
+    <div className="w-full h-full bg-main-dark-extra-blue m-auto min py-16 px-32 max-639:px-16">
+      <div className="glow-text">
+        <h2 className="pt-8 font-extrabold text-white uppercase text-4xl tracking-wider main-title main-title-glow">
+          tech stack
+        </h2>
+      </div>
       <br />
       <div>
-        <p className="text-silver text-justify max-w-2xl m-auto leading-normal text-lg">
-          Those are the technologies that I'm currently profficient with and I
-          created several projects with them. You'll also be able to see tools
-          for UI design, like Figma and others for productivity, such as Vite:
+        <p className="text-left pt-12 w-full m-auto text-md text-gray-400 leading-loose">
+          I have gained proficiency in several technologies through my
+          experience as a front-end developer and have utilized them in creating
+          numerous projects. Some of these technologies include but are not
+          limited to: I also have experience using various tools for UI design,
+          such as Figma, and for productivity, such as Taskade and Vite.
         </p>
-        <SkillsLearned />
 
-        <p className="text-silver text-justify max-w-2xl m-auto leading-normal text-lg">
+        <section className="flex flex-wrap gap-4 pt-12">
+          <LearnedSkills></LearnedSkills>
+        </section>
+
+        <p className="pt-12 w-full m-auto text-md text-gray-400 leading-loose text-left">
           Also, those are the technologies that I'm either learning or I'm keen
           on learning these months, according to my goal of being a MERN stack
           developer and create more CRUD applications with complex features.
         </p>
 
-        <SkillsToLearn />
-
-        <p className="text-silver text-justify max-w-2xl m-auto leading-normal text-lg">
-          Additionally, this is my resume (2023). Which is available in both
-          Spanish and English. You can download it for learning more about me:
-        </p>
-        <div
-          className="flex flex-col
-         gap-4 pt-6"
-        >
-          <button className="bg-transparent hover:bg-main-cyan flex justify-items-start justify-center items-center duration-300 ease-in h-14 m-auto text-silver font-regular hover:text-main-extra-dark-blue mt-4 w-1/2 border border-main-cyan hover:border-transparent rounded  max-1023:h-16">
-            Resume (EN) <FontAwesomeIcon className="pl-2" icon={faDownload} />
-          </button>
-          <button className="bg-transparent hover:bg-main-cyan flex justify-items-start justify-center items-center duration-300 ease-in h-14 m-auto text-silver font-regular hover:text-main-extra-dark-blue mt-4 w-1/2 border border-main-cyan hover:border-transparent rounded  max-1023:h-16">
-            Resume (ES) <FontAwesomeIcon className="pl-2" icon={faDownload} />
-          </button>
-        </div>
+        <section className="flex flex-wrap gap-4 pt-6">
+          <SkillsToLearn></SkillsToLearn>
+        </section>
       </div>
     </div>
   );
