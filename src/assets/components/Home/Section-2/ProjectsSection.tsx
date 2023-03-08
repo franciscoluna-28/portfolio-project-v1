@@ -3,6 +3,7 @@ import "../../../style-utils/utils.css";
 import weatherImage from "../../../../images/projects-images/weatherApp.png";
 import blogImage from "../../../../images/projects-images/blog.png";
 import waterImage from "../../../../images/projects-images/water-intake-calculator.png";
+import QRCode from "../../../../images/projects-images/qr-code-app-node.png";
 
 const ProjectsSection = () => {
   return (
@@ -15,7 +16,7 @@ const ProjectsSection = () => {
             last projects
           </h2>
         </div>
-        <div className="w-full px-12 grid-flow-col gap-16 col-auto grid justify-center pt-20 max-1279:grid-flow-row max-1279:row-auto">
+        <div className="w-full px-12 gap-16 flex flex-wrap justify-center pt-20">
           {/* projects container */}
           <ProjectCard
             projectImageURL={weatherImage}
@@ -35,6 +36,11 @@ const ProjectsSection = () => {
           />
           <ProjectCard
             projectImageURL={waterImage}
+            projectName="Water Intake Calculator"
+            projectDescription="Project made experimenting with Vite and ReactJS. This was my first time experimenting with hooks and other React features."
+          />
+          <ProjectCard
+            projectImageURL={QRCode}
             projectName="Water Intake Calculator"
             projectDescription="Project made experimenting with Vite and ReactJS. This was my first time experimenting with hooks and other React features."
           />
