@@ -13,7 +13,7 @@ const ProjectCard = ({
       <div className="h-auto project-card w-80 rounded-md hover:scale-105 duration-500 shadow-md">
         <div className="flex justify-center">
           <img
-            className="h-56 w-auto border-5 border-solid border-white shadow-md rounded-t-md relative"
+            className="h-56 w-auto border-5 border-solid border-white shadow-md rounded-t-md relative bg-cover w-full"
             src={projectImageURL}
           ></img>
         </div>
