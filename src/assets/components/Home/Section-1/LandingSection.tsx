@@ -6,7 +6,7 @@ import "../../../style-utils/utils.css";
 
 const LandingSection = () => {
   return (
-    <div className="bg-main-extra-dark-blue min-h-screen flex text-center justify-center items-center">
+    <div className="bg-main-extra-dark-blue min-h-screen flex text-center justify-center items-center max-639:px-16">
       <div className="grid grid-cols-2 gap-10 max-1279:flex max-1279:grid-cols-none">
         <div className="order-last flex justify-center items-center max-1279:hidden">
           <img
