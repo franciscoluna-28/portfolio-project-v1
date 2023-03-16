@@ -6,11 +6,11 @@ import "../../../style-utils/utils.css";
 
 const LandingSection = () => {
   return (
-    <div className="bg-main-extra-dark-blue min-h-screen flex text-center justify-center items-center max-639:px-16">
-      <div className="grid grid-cols-2 gap-10 max-1279:flex max-1279:grid-cols-none">
-        <div className="order-last flex justify-center items-center max-1279:hidden">
+    <div className="primary-div-up min-h-screen flex text-center justify-center items-center max-639:px-16 clamp" id="home">
+      <div className="grid grid-cols-2 gap-10 max-1279:flex max-1279:grid-cols-none max-1279:flex-col-reverse">
+        <div className="order-last flex justify-center items-center max-1279:flex max-1279:justify-center">
           <img
-            className="h-72 w-72 rounded-full glow-main border-white border-2 border-double main-image p-1 floating"
+            className="h-72 w-72 rounded-full max-1279:h-48 max-1279:w-48 glow-main border-white border-2 border-double main-image p-1 floating max-767:h-32 max-767:w-32"
             src={myPhoto}
           ></img>
         </div>
@@ -33,8 +33,8 @@ const LandingSection = () => {
             <button className="bg-transparent hover:bg-main-cyan flex justify-items-start justify-center items-center duration-300 ease-in h-14 text-silver font-regular hover:text-main-extra-dark-blue w-1/2 border border-main-cyan hover:border-transparent rounded glow-secondary">
               Contact Me
             </button>
-            {/*       <GitHubIcon className="text-white scale-110 max-639:hidden max-639:opacity-0"/>
-      <LinkedInIcon className="text-white scale-110 max-639:hidden max-639:opacity-0"/> */}
+                   <a href="https://github.com/franciscoluna-28"><GitHubIcon className="text-white scale-110"></GitHubIcon></a>
+                   <a href="https://www.linkedin.com/in/franciscoluna28/"><LinkedInIcon className="text-white scale-110"></LinkedInIcon></a>
           </div>
         </div>
       </div>
