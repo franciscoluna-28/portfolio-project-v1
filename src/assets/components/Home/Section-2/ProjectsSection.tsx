@@ -7,7 +7,7 @@ import QRCode from "../../../../images/projects-images/qr-code-app-node.png";
 
 const ProjectsSection = () => {
   return (
-    <div className="w-full h-full bg-main-extra-dark-blue m-auto min">
+    <div className="w-full h-full primary-div-down bg-contrast-bg m-auto min" id="projects">
       <div>
         {" "}
         {/* box 2 container */}
@@ -25,6 +25,8 @@ const ProjectsSection = () => {
           purposes with React, Vite,
           TailwindCSS, TypeScript,
           ES6 and fetch API."
+          projectGitHubLink="https://github.com/franciscoluna-28/Weather-App-React-and-TailwindCSS" 
+          projectPublicURL="https://weather-app-tailwind-react.netlify.app"
           />
           <ProjectCard
             projectImageURL={blogImage}
@@ -33,16 +35,23 @@ const ProjectsSection = () => {
             using TypeScript, SASS,
             JavaScript, Gulp and
             ES6. Learned a lot making this one."
+            projectGitHubLink="https://github.com/franciscoluna-28/Song-Blog-Beta"
+            projectPublicURL="https://music-blog-beta-ts-sass.netlify.app"
+            
           />
           <ProjectCard
             projectImageURL={waterImage}
             projectName="Water Intake Calculator"
             projectDescription="Project made experimenting with Vite and ReactJS. This was my first time experimenting with hooks and other React features."
+            projectGitHubLink="https://github.com/franciscoluna-28/daily-water-intake-calculator"
+            projectPublicURL="https://daily-water-intake-calculator.netlify.app"
           />
           <ProjectCard
             projectImageURL={QRCode}
-            projectName="Water Intake Calculator"
-            projectDescription="Project made experimenting with Vite and ReactJS. This was my first time experimenting with hooks and other React features."
+            projectName="QR Code Generator"
+            projectDescription="Project made using Node.js, ExpressJS and TypeScript. This was my first time experimenting with backend and fullstack development."
+            projectGitHubLink=""
+            projectPublicURL=""
           />
         </div>
       </div>

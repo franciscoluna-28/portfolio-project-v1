@@ -7,13 +7,15 @@ const ProjectCard = ({
   projectImageURL,
   projectName,
   projectDescription,
+  projectGitHubLink,
+  projectPublicURL,
 }: Card) => {
   return (
     <div>
       <div className="h-auto project-card w-80 rounded-md hover:scale-105 duration-500 shadow-md">
         <div className="flex justify-center">
           <img
-            className="h-56 w-auto border-5 border-solid border-white shadow-md rounded-t-md relative bg-cover w-full"
+            className="h-56 w-auto border-5 border-solid border-white shadow-md rounded-t-md relative bg-cover"
             src={projectImageURL}
           ></img>
         </div>
@@ -27,8 +29,8 @@ const ProjectCard = ({
           </p>
 
           <div className="flex gap-6 py-6">
-            <GitHubIcon className="text-white translate-y-3 glow-text" />
-            <LanguageIcon className="text-main-cyan translate-y-3 glow-text" />
+            <a href={projectGitHubLink}><GitHubIcon className="text-white translate-y-3 glow-text"></GitHubIcon></a> 
+            <a href={projectPublicURL}><LanguageIcon className="text-main-cyan translate-y-3 glow-text"></LanguageIcon></a>
           </div>
         </div>
       </div>
