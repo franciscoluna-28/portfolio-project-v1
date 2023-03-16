@@ -26,10 +26,10 @@ const AboutMeSection = () => {
               </div>
               
               <p className="mb-4 text-base leading-loose font-normal text-gray-400 w-full pt-2 text-left">
-                Greetings, my name is Francisco Luna, and I am an 18-year-old
+{/*                 Greetings, my name is Francisco Luna, and I am an 18-year-old
                 computer science student and self taught front-end developer
                 from Venezuela. In this portfolio, I will share my journey and
-                experiences with web development.
+                experiences with web development. */}
               </p>
 {/*               <img
                 className="pt-6 overflow-hidde shadow-md hover:scale-105 duration-500 h-96 m-auto"
@@ -56,7 +56,7 @@ const AboutMeSection = () => {
               </div>
 
               <p className="text-base text-left leading-loose font-normal text-gray-400 dark:text-gray-400 w-full pt-2 m-auto">
-                My journey in coding began at the age of 16 when I discovered my
+{/*                 My journey in coding began at the age of 16 when I discovered my
                 passion for creating things. In mid-2021, I began learning
                 Python and quickly grasped the fundamentals of coding, using
                 this knowledge to create several simple projects. However, it
@@ -66,7 +66,7 @@ const AboutMeSection = () => {
                 by experimenting with new frameworks and tools, such as ReactJS,
                 Vite, MongoDB, TailwindCSS, TypeScript, and others. This allowed
                 me to further enhance my skills and broaden my understanding of
-                web development.
+                web development. */}
               </p>
 {/*               <img
                 className="pt-12 overflow-hidden shadow-md hover:scale-105 duration-500 h-96 w-fit m-auto"
@@ -89,7 +89,7 @@ const AboutMeSection = () => {
                 </span>
               </div>
               <p className="text-base text-left leading-loose font-normal text-gray-400 m-auto w-full dark:text-gray-400 pt-2">
-                Currently, my main goal is to collaborate with new people and
+{/*                 Currently, my main goal is to collaborate with new people and
                 companies to expand my knowledge and skills in both Front End
                 and Back End development. I aspire to work with the MERN
                 (MongoDB, Express.JS, ReactJS, and NodeJS) stack and improve my
@@ -99,7 +99,7 @@ const AboutMeSection = () => {
                 horizons and gain valuable experience in developing real-world
                 applications. I am eager to contribute to projects and to learn
                 from experienced developers, and I believe that working
-                collaboratively is the best way to achieve these goals.
+                collaboratively is the best way to achieve these goals. */}
               </p>
 {/*               <img
                 className="pt-12 overflow-hidde shadow-md hover:scale-105 duration-500 h-96 m-auto"
