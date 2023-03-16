@@ -1,11 +1,11 @@
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import codingBg from "../../../../images/projects-images/coding-bg.jpg";
-import mernStack from "../../../../images/projects-images/mern.png";
-import frontEnd from "../../../../images/projects-images/dev.jpg";
+import ArticleIcon from '@mui/icons-material/Article';
+
+
+
 
 const AboutMeSection = () => {
   return (
-    <div className="w-full h-full bg-main-extra-dark-blue m-auto min py-16">
+    <div className="w-full h-full bg-main-extra-dark-blue m-auto min py-8" id="about">
       <h2 className="pt-8 font-extrabold text-white uppercase text-4xl tracking-wider main-title main-title-glow">
         About Me
       </h2>
@@ -24,6 +24,7 @@ const AboutMeSection = () => {
                   1
                 </span>
               </div>
+              
               <p className="mb-4 text-base leading-loose font-normal text-gray-400 w-full pt-2 text-left">
                 Greetings, my name is Francisco Luna, and I am an 18-year-old
                 computer science student and self taught front-end developer
@@ -38,10 +39,13 @@ const AboutMeSection = () => {
           </div>
 
           <div className="flex justify-center">
-            <li className="mb-10 pt-16">
+
+            <li className="mb-10 pt-4">
+
               <time className="mb-1 flex text-sm font-normal leading-none text-gray-500 dark:text-gray-500 text-left">
                 July 2021 - December 2022
               </time>
+
               <div className="flex">
                 <h3 className="font-bold flex text-white pt-2 text-2xl text-left">
                   My Story with Coding
@@ -72,7 +76,7 @@ const AboutMeSection = () => {
           </div>
 
           <div className="flex justify-center">
-            <li className="pt-16">
+            <li className="pt-8 max-767:pt-4 mb-10">
               <time className="mb-1 flex text-sm text-left font-normal leading-none text-gray-400 dark:text-gray-500">
                 December 2022 - Currently
               </time>
